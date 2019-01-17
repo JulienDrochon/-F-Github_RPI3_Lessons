@@ -1,4 +1,5 @@
-# Install on RaspBerry PI 3 with Terminal
+# Install on RaspBerry PI 3 (Raspbian Stretch) with Terminal
+    
 ## Install Nodejs
 
     $ sudo apt install -y nodejs
@@ -14,7 +15,6 @@ Checking npm version
     $ npm -v 
 
 ## Install Express
-### Globally
 
 In Terminal :
 
@@ -29,6 +29,7 @@ In Terminal :
  ## Install PI io
  
      $ npm install --global pi-io
+     
 
 # How to use Code Examples
 ## Download one of directory of this one
@@ -41,5 +42,19 @@ https://minhaskamal.github.io/DownGit/#/home
 ## Unzip the file
 In Terminal :
 
-     $ 
+     $ cd Desktop
+     $ unzip B_A_A_HCSR04.zip
+     
+## Wiring Electronic components on GPIO's RPI
+See the .png file in 'B_A_A_HCSR04' folder
+     
+## Launch the Nodejs App
+
+     $ cd B_A_A_HCSR04
+     $ node app.js
+     
+## Open Chromium Browser
+Type 'localhost:3000' in the address bar
+
+Enjoy !
 
