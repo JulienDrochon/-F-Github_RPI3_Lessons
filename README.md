@@ -37,4 +37,11 @@ Press CTRL+x
 Press O
 Press Enter
 
-     sudo chmod +x kiosk.sh
+     $ sudo chmod +x kiosk.sh
+     $ sudo reboot
+     
+For stopping it :
+
+    $ sudo killall kiosk.sh
+    $ sudo reboot
+     
