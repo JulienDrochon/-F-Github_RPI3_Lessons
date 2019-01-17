@@ -17,28 +17,12 @@
 <script>
 var div = document.getElementById("dataDisplay");
 
-var socket = io('/secret');
+var socket = io('/toWebBrowser');
 
 
     socket.on('distanceData', function(distanceData) {
         console.log(distanceData);
+        div.innerHTML = data;
     })
-
-
-// setInterval(refreshDataStream, 100);
-
-
-
-function refreshDataStream() {
-  socket.on('distanceData', DataStream);
-
-  function DataStream(data){
-    console.log(data);
-    div.innerHTML = data;
-  }
-
-}
-
-
 </script>
 </html>
