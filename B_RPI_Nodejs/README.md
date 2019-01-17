@@ -14,23 +14,7 @@ Checking npm version
 
     $ npm -v 
 
-## Install Express
-
-In Terminal :
-
-    $ sudo npm install -g express
     
-## Install Johnny Five
-
-In Terminal :
-
-    $ sudo npm install -g johnny-five
-    
- ## Install PI io
- 
-     $ sudo npm install -g pi-io
-     
-
 # How to use Code Examples
 ## Download one of directory of this one
 - Example 'B_Sensors/B_A_A_HCSR04'
@@ -47,10 +31,17 @@ In Terminal :
      
 ## Wiring Electronic components on GPIO's RPI
 See the .png file in 'B_A_A_HCSR04' folder
+
+## Initializing
+In Terminal :
+
+    $ cd B_A_A_HCSR04
+    $ sudo npm install express
+    $ sudo npm installjohnny-five
+    $ sudo npm install -g pi-io
      
 ## Launch the Nodejs App
 
-     $ cd B_A_A_HCSR04
      $ node app.js
      
 ## Open Chromium Browser
