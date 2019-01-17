@@ -17,12 +17,10 @@
 <script>
 var div = document.getElementById("dataDisplay");
 
-var socket = io('/toWebBrowser');
-
-
+var socket = io('/secret');
     socket.on('distanceData', function(distanceData) {
         console.log(distanceData);
-        div.innerHTML = data;
+        div.innerHTML = distanceData;
     })
 </script>
 </html>

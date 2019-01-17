@@ -25,7 +25,7 @@ board.on('ready', function() {
   });
 
   //---------------------------------------------- When GPIO values change…
-  io.of('/toWebBrowser').on('connection', function (socket) {
+  io.of('/secret').on('connection', function (socket) {
     proximity.on("change", function() {
       distanceData = this.cm;
       if(distanceData > 0){
