@@ -36,13 +36,14 @@ See the .png file in 'B_A_A_HCSR04' folder
 In Terminal :
 
     $ cd B_A_A_HCSR04
+    $ npm init
     $ sudo npm install express
-    $ sudo npm installjohnny-five
-    $ sudo npm install -g pi-io
+    $ sudo npm install johnny-five
+    $ sudo npm install pi-io
      
 ## Launch the Nodejs App
 
-     $ node app.js
+     $ sudo node app.js
      
 ## Open Chromium Browser
 Type 'localhost:3000' in the address bar
