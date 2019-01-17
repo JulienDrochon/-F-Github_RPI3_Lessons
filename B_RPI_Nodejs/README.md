@@ -43,7 +43,7 @@ In Terminal :
      
 ## Launch the Nodejs App
 
-     $ node app.js
+     $ sudo node app.js
      
 ## Open Chromium Browser
 Type 'localhost:3000' in the address bar
