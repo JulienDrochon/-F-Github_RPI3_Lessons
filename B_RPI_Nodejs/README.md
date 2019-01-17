@@ -36,6 +36,7 @@ See the .png file in 'B_A_A_HCSR04' folder
 In Terminal :
 
     $ cd B_A_A_HCSR04
+    $ npm init
     $ sudo npm install express
     $ sudo npm install johnny-five
     $ sudo npm install pi-io
