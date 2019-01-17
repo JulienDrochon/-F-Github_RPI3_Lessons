@@ -37,8 +37,8 @@ In Terminal :
 
     $ cd B_A_A_HCSR04
     $ sudo npm install express
-    $ sudo npm installjohnny-five
-    $ sudo npm install -g pi-io
+    $ sudo npm install johnny-five
+    $ sudo npm install pi-io
      
 ## Launch the Nodejs App
 
