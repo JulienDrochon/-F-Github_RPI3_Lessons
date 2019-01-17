@@ -16,13 +16,19 @@ Checking npm version
 ## Install Express
 ### Globally
 
-### Locally
-1. In Terminal, choose the location where to install locally (example : 'test' folder on Desktop)
+In Terminal :
 
-    $ cd Desktop/test
+    $ npm install --global express
+    
+## Install Johnny Five
 
-## 
+In Terminal :
 
+    $ npm install --global johnny-five
+    
+ ## Install PI io
+ 
+     $ npm install --global pi-io
 
 # How to use Code Examples
 ## Download one of directory of this one
@@ -33,5 +39,7 @@ https://minhaskamal.github.io/DownGit/#/home
 3. Save it to your RPI's Desktop
 
 ## Unzip the file
-1.
+In Terminal :
+
+     $ 
 
