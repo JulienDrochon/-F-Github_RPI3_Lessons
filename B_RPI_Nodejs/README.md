@@ -18,17 +18,17 @@ Checking npm version
 
 In Terminal :
 
-    $ npm install --global express
+    $ sudo npm install -g express
     
 ## Install Johnny Five
 
 In Terminal :
 
-    $ npm install --global johnny-five
+    $ sudo npm install -g johnny-five
     
  ## Install PI io
  
-     $ npm install --global pi-io
+     $ sudo npm install -g pi-io
      
 
 # How to use Code Examples
