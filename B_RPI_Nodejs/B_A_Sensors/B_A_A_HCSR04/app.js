@@ -26,6 +26,7 @@ board.on('ready', function() {
 
   //---------------------------------------------- When GPIO values change…
   io.of('/secret').on('connection', function (socket) {
+    ExecuteChromium();
     proximity.on("change", function() {
       distanceData = this.cm;
       if(distanceData > 0){
@@ -36,3 +37,13 @@ board.on('ready', function() {
 
   });
 });
+
+function ExecuteChromium() {
+    exec("chromium-browser --kiosk http://localhost:3000", function(error, stdout, stderr) {
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        if (error !== null) {
+            console.log("exec errror: " + error);
+        }
+    });
+}
