@@ -1,6 +1,13 @@
 # -F-Github_RPI3_Lessons (Raspbian Strecth)
 
 ## Auto Launch node app at startup
+
+### Install Forever
+
+     $ sudo npm install forever -g
+     
+### Create Service
+
      $ sudo nano /etc/systemd/system/node-server.service
 
 Copy-paste this :
@@ -10,8 +17,7 @@ After=network.target
 
 [Service]
 WorkingDirectory=/home/pi/Desktop/B_A_A_HCSR04
-ExecStart=/usr/bin/node app.js
-Restart=always
+ExecStart=/usr/local/bin/forever /home/pi/Desktop/B_A_A_HCSR04/app.js
 User=root
 RestartSec=30s
 
