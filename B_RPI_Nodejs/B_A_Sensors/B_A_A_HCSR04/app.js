@@ -6,10 +6,12 @@ var app=express();
 var distanceData;
 
 //---------------------------------------------- Serveur Socket.io
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 var server = http.createServer(app);
-server.listen(3000);
+server.listen(9000);
 var io = require('socket.io').listen(server);
+
+
 
 //---------------------------------------------- Johnny Five Board
 var board = new five.Board({
@@ -34,5 +36,5 @@ board.on('ready', function() {
       }
     });
 
-  });
+ });
 });
