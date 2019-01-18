@@ -8,7 +8,7 @@ var distanceData;
 //---------------------------------------------- Serveur Socket.io
 app.use(express.static(__dirname + '/public'));
 var server = http.createServer(app);
-server.listen(9000);
+server.listen(3000);
 var io = require('socket.io').listen(server);
 
 
