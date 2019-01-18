@@ -1,5 +1,40 @@
 # -F-Github_RPI3_Lessons (Raspbian Strecth)
 
+## Auto Launch node app at startup
+     $ sudo nano /etc/systemd/system/node-server.service
+
+Copy-paste this :
+[Unit]
+Description=Node Server Service
+After=network.target
+
+[Service]
+WorkingDirectory=/home/pi/Desktop/B_A_A_HCSR04
+ExecStart=/usr/bin/node app.js
+Restart=always
+User=root
+RestartSec=30s
+
+[Install]
+WantedBy=multi-user.target
+
+Press CTRL+x
+Press O
+Press Enter
+
+     $ sudo systemctl enable node-server.service
+     $ sudo systemctl start node-server.service
+
+### For stopping service
+
+     $ sudo systemctl stop node-server.service
+     
+### Log
+
+     $ journalctl -u node-server
+     
+     
+
 ## Auto Launch Chromium Fullscreen mode (no mouse cursor) (<a href="https://obrienlabs.net/setup-raspberry-pi-kiosk-chromium/">source</a>)
      $ sudo apt-get install unclutter
      $ cd /home/pi/.config
