@@ -6,6 +6,8 @@
 
      $ sudo npm install forever -g
      
+Docs : https://www.npmjs.com/package/forever
+     
 ### Create Service
 
      $ sudo nano /etc/systemd/system/node-server.service
