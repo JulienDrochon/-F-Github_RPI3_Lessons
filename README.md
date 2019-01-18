@@ -37,7 +37,7 @@ Press CTRL+x
 Press O
 Press Enter
 
-     $ sudo chmod +x kiosk.sh
+     $ sudo chmod +x /home/pi/kiosk.sh
      $ sudo reboot
      
 For stopping it :
