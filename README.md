@@ -11,21 +11,24 @@
      $ sudo nano /etc/systemd/system/node-server.service
 
 Copy-paste this :
-[Unit]
-Description=Node Server Service
-After=network.target
 
-[Service]
-WorkingDirectory=/home/pi/Desktop/B_A_A_HCSR04
-ExecStart=/usr/local/bin/forever /home/pi/Desktop/B_A_A_HCSR04/app.js
-User=root
-RestartSec=30s
+     [Unit]
+     Description=Node Server Service
+     After=network.target
 
-[Install]
-WantedBy=multi-user.target
+    [Service]
+    WorkingDirectory=/home/pi/Desktop/B_A_A_HCSR04
+    ExecStart=/usr/local/bin/forever /home/pi/Desktop/B_A_A_HCSR04/app.js
+    User=root
+    RestartSec=30s
+
+    [Install]
+    WantedBy=multi-user.target
 
 Press CTRL+x
+
 Press O
+
 Press Enter
 
      $ sudo systemctl enable node-server.service
@@ -57,7 +60,9 @@ Copy Paste this :
      X-GNOME-Autostart-enabled=true
 
 Press CTRL+x
+
 Press O
+
 Press Enter
 
      $ sudo nano /home/pi/kiosk.sh
@@ -75,7 +80,9 @@ Copy Paste this :
     /usr/bin/chromium-browser --kiosk https://google.com &
     
 Press CTRL+x
+
 Press O
+
 Press Enter
 
      $ sudo chmod +x /home/pi/kiosk.sh
