@@ -1,6 +1,5 @@
 ## Play VIdeo at startup with VLC
 
-## Auto Launch Chromium Fullscreen mode (no mouse cursor) (<a href="https://obrienlabs.net/setup-raspberry-pi-kiosk-chromium/">source</a>)
      $ sudo apt-get install unclutter
      $ cd /home/pi/.config
      $ sudo mkdir autostart
