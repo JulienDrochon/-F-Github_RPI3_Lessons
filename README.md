@@ -1,5 +1,7 @@
 # -F-Github_RPI3_Lessons (Raspbian Strecth)
 
+https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-Ports-1-150x150.jpg
+
 ## Auto Launch node app at startup
 
 ### Install Forever
