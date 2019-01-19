@@ -1,6 +1,6 @@
 # -F-Github_RPI3_Lessons (Raspbian Strecth)
 
-<img src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-Ports-1-150x150.jpg">
+<img src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-Ports-1-1833x1080.jpg">
 
 ## Auto Launch node app at startup
 
