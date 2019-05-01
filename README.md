@@ -2,14 +2,20 @@
 
 <img src="https://www.raspberrypi.org/app/uploads/2017/05/Raspberry-Pi-3-Ports-1-1833x1080.jpg">
 
+## Set wifi connection without keyboard or monitor or ethernet
+https://howchoo.com/g/ndy1zte2yjn/how-to-set-up-wifi-on-your-raspberry-pi-without-ethernet
+
+## Find your rpi on local network
+ping hostnameofyourRPI.local
+
 ## Auto Launch node app at startup
 
 ### Install Forever
 
      $ sudo npm install forever -g
-     
+
 Docs : https://www.npmjs.com/package/forever
-     
+
 ### Create Service
 
      $ sudo nano /etc/systemd/system/node-server.service
@@ -41,12 +47,12 @@ Press Enter
 ### For stopping service
 
      $ sudo systemctl stop node-server.service
-     
+
 ### Log
 
      $ journalctl -u node-server
-     
-     
+
+
 
 ## Auto Launch Chromium Fullscreen mode (no mouse cursor) (<a href="https://obrienlabs.net/setup-raspberry-pi-kiosk-chromium/">source</a>)
      $ sudo apt-get install unclutter
@@ -54,7 +60,7 @@ Press Enter
      $ sudo mkdir autostart
      $ cd autostart
      $ sudo nano kiosk.desktop
-     
+
 Copy Paste this :
 
      [Desktop Entry]
@@ -75,14 +81,14 @@ Copy Paste this :
 
     # Hide the mouse from the display
     unclutter &
- 
+
     # If Chrome crashes (usually due to rebooting), clear the crash flag so we don't have the annoying warning bar
     sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' /home/pi/.config/chromium/Default/Preferences
     sed -i 's/"exit_type":"Crashed"/"exit_type":"Normal"/' /home/pi/.config/chromium/Default/Preferences
- 
+
     # Run Chromium and open tabs
     /usr/bin/chromium-browser --kiosk https://google.com &
-    
+
 Press CTRL+x
 
 Press O
@@ -91,9 +97,8 @@ Press Enter
 
      $ sudo chmod +x /home/pi/kiosk.sh
      $ sudo reboot
-     
+
 For stopping it :
 
     $ sudo killall kiosk.sh
     $ sudo reboot
-     
